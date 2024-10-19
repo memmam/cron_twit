@@ -31,9 +31,7 @@ api_v2 = tweepy.Client(consumer_key=consumer_key,
 # Upload image and add alt text
 media_ids = []
 result = api_v1.media_upload(filename="where.png")
-api_v1.create_media_metadata(result.media_id, "I'm moving! I am on Bsky as \
-@squidhomin.id, Mastodon as @squid@glitch.lgbt, Reddit as SquidRobotFriend, \
-and Tumblr, Twitch, and YouTube as @SquidHominid.")
+api_v1.create_media_metadata(result.media_id, "Insert alt text here")
 media_ids.append(result.media_id)
 
 # Send tweet
