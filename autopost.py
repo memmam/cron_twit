@@ -30,7 +30,7 @@ api_v2 = tweepy.Client(consumer_key=consumer_key,
 
 # Upload image and add alt text
 media_ids = []
-result = api_v1.media_upload(filename="where.png")
+result = api_v1.media_upload(filename="/home/memmam/img.png") # MUST BE ABSOLUTE PATH
 api_v1.create_media_metadata(result.media_id, "Insert alt text here")
 media_ids.append(result.media_id)
 
